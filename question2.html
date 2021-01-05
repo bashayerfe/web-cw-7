@@ -18,6 +18,11 @@
          حط اسم السائق وعمره object داخل كل
       */
 
+drivers[
+  {name:'Ali' , Age:17},
+  {name:'mohmad', Age:20},
+  {name:'Ahmed',Age:32}
+]
       // 2
       /* licenseTest() اسمها function قم بتعريف
          خلي الدالة تختبر عمر كل سائق باستخدام جملة دوران
@@ -26,6 +31,20 @@
       */
 
       // onclick انتبه إنه إحنا مو قاعدين نستخدم زر يعني ما نقدر نستخدم
+
+      function licenseTest(){
+        for (let index = 0; index < drivers.length; index++) {
+          if (drivers.Age>=18)
+          {
+     console.log(`تفضل رخصتك يا ${drivers.name}`);
+          }
+          else 
+          console.log(`  نعتذر منك، المرة الياية إن شاء الله ${drivers.name}`);
+        }
+      }
+
     </script>
   </body>
 </html>
+
+
